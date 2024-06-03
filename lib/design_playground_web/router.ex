@@ -24,7 +24,7 @@ defmodule DesignPlaygroundWeb.Router do
     live "/posts/:id", PostLive.Show, :show
     live "/posts/:id/show/edit", PostLive.Show, :edit
 
-    get "/", PageController, :home
+    live "/", HomeLive, :index
   end
 
   # Other scopes may use custom stacks.
